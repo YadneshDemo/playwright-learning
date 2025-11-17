@@ -1,4 +1,4 @@
-markdown# 🎭 Playwright Learning Journey - Progress Tracker
+# 🎭 Playwright Learning Journey - Progress Tracker
 
 > **Goal:** Master Playwright with TypeScript through hands-on, project-based learning  
 > **Timeline:** 8 weeks | **Started:** November 15, 2024  
@@ -8,34 +8,34 @@ markdown# 🎭 Playwright Learning Journey - Progress Tracker
 
 ## 📊 Overall Progress
 ```
-██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 4%
+████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 8%
 
-Blocks Completed: 2 / 49
+Blocks Completed: 4 / 49
 Current Week: Week 1 - Foundation Project
-Days Active: 1
+Days Active: 2
 ```
 
 | Metric | Status |
 |--------|--------|
-| **Blocks Completed** | 2 / 49 |
-| **Tests Written** | 0 |
-| **Commits Made** | 3 |
-| **Current Focus** | Authentication Setup |
+| **Blocks Completed** | 4 / 49 |
+| **Tests Written** | 1 |
+| **Commits Made** | 4 |
+| **Current Focus** | Configure Projects |
 
 ---
 
 ## 🎯 Current Sprint
 
 ### 🔥 Active Now
-- [ ] **Block 3:** Auth setup script - login logic
-- [ ] **Block 4:** Auth setup script - save storage state
-
-### 📅 Next Up
 - [ ] **Block 5:** Configure projects in playwright.config.ts
 - [ ] **Block 6:** Create first test using saved auth
 
-**Estimated Time:** 45 minutes  
-**Target Completion:** November 16, 2024
+### 📅 Next Up
+- [ ] **Block 7:** Create LoginPage.ts
+- [ ] **Block 8:** Create ProductsPage.ts
+
+**Estimated Time:** 40 minutes  
+**Target Completion:** November 18, 2024
 
 ---
 
@@ -50,16 +50,22 @@ Days Active: 1
 
 **Completed:** November 15, 2024
 
+### Authentication System
+- [x] 🔐 **Block 3:** Auth setup script - login logic
+- [x] 💾 **Block 4:** Auth setup script - save storage state
+
+**Completed:** November 17, 2024
+
 ---
 
 ## 📚 Learning Path
 
-### Week 1: Foundation Project (4% Complete)
+### Week 1: Foundation Project (8% Complete)
 **Goal:** Complete e-commerce test suite with auth management
 
 #### 🔐 Authentication System
-- [ ] Block 3: Auth setup script - login logic
-- [ ] Block 4: Auth setup script - save storage state
+- [x] Block 3: Auth setup script - login logic
+- [x] Block 4: Auth setup script - save storage state
 - [ ] Block 5: Configure projects in playwright.config.ts
 - [ ] Block 6: Create first test using saved auth
 
@@ -179,13 +185,19 @@ Days Active: 1
 - Playwright project structure
 - Configuration management
 - Test organization patterns
+- Setup tests vs regular tests
+- Authentication state management
+- Storage state (cookies + localStorage)
+- Browser context management
+- Playwright codegen tool
 
 ### 🔄 In Progress
-- Authentication state management
-- Test setup scripts
-- Page Object Model
+- Project configuration
+- Test dependencies
+- Using saved authentication
 
 ### ⏳ Upcoming
+- Page Object Model
 - Custom fixtures
 - API testing
 - Network mocking
@@ -200,8 +212,8 @@ Days Active: 1
 | Day | Blocks | Tests | Commits | Hours |
 |-----|--------|-------|---------|-------|
 | Nov 15 | 2 | 0 | 3 | 1.5 |
-| Nov 16 | - | - | - | - |
-| **Total** | **2** | **0** | **3** | **1.5** |
+| Nov 17 | 2 | 1 | 1 | 2.0 |
+| **Total** | **4** | **1** | **4** | **3.5** |
 
 ---
 
@@ -213,6 +225,15 @@ Days Active: 1
 - ✅ Playwright config is straightforward and well-documented
 - ✅ BaseURL makes tests cleaner and more maintainable
 
+### November 17, 2024
+- ✅ Setup tests use `import { test as setup }` pattern
+- ✅ Storage state saves cookies and localStorage for reuse
+- ✅ Playwright codegen is excellent for finding selectors quickly
+- ✅ Auth files should be in .gitignore (security best practice)
+- ✅ Running tests in headed mode helps debug issues
+- ✅ Console.log is useful for debugging test execution flow
+- ✅ File paths matter - use relative paths from project root
+
 ---
 
 ## 🔗 Quick Links
@@ -220,6 +241,7 @@ Days Active: 1
 - **Repository:** [playwright-learning](https://github.com/YadneshDemo/playwright-learning)
 - **Playwright Docs:** [playwright.dev](https://playwright.dev)
 - **Progress Tracker:** [PROGRESS.md](https://github.com/YadneshDemo/playwright-learning/blob/main/PROGRESS.md)
+- **Auth Documentation:** [playwright.dev/docs/auth](https://playwright.dev/docs/auth)
 
 ---
 
@@ -227,14 +249,15 @@ Days Active: 1
 
 > **"Code every day, even if just 30 minutes - consistency matters more than marathon sessions"**
 
-**Streak:** 🔥 1 day  
-**Next Milestone:** Complete Week 1 (15 blocks)  
-**Target Date:** November 22, 2024
+**Streak:** 🔥 2 days  
+**Next Milestone:** Complete Authentication System (Blocks 5-6)  
+**Target Date:** November 18, 2024
 
 ---
 
-**Last Updated:** November 15, 2024  
-**Next Review:** November 16, 2024
+**Last Updated:** November 17, 2024  
+**Next Session:** Block 5 - Configure Projects  
+**Next Review:** November 18, 2024
 
 ---
 
