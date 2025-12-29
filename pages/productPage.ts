@@ -18,4 +18,10 @@ export class ProductsPage {
   async getTitle() {
     return await this.page.locator('.title').textContent();
   }
+
+  async addToCart(productName: string) {
+    const button = this.page.locator(`[data-test="add-to-cart-sauce-labs-${productName}"]`);
+    await button.click();
+  }
+
 }

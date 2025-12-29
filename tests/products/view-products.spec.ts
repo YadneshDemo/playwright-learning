@@ -2,14 +2,20 @@ import { test, expect } from '@playwright/test';
 import { ProductsPage } from '../../pages/productPage';
 
 test('can view products without logging in', async ({ page }) => {
-  // Create the page object
-  const productsPage = new ProductsPage(page);
+  const productPage = new ProductsPage(page);
   
-  // Use its methods
-  await productsPage.goto();
-  const title = await productsPage.getTitle();
+  await productPage.goto();
+  const title = await productPage.getTitle();
   expect(title).toBe('Products');
   
-  // Keep this for now
   await expect(page.locator('.inventory_item').first()).toBeVisible();
+});
+
+test('can add to cart', async ({ page }) => {
+  const productPage = new ProductsPage(page);
+  
+  await productPage.goto();
+  await productPage.addToCart('bike-light');
+  
+  await expect(page.locator('.shopping_cart_badge')).toHaveText('1');
 });
